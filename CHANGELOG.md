@@ -7,6 +7,33 @@ All notable changes to the Misaka Network project are documented here.
 
 ---
 
+## [2.33.0](https://github.com/Ikalus1988/MisakaNet/compare/v2.32.1...v2.33.0) (2026-09-20)
+
+
+### Features
+
+* **action:** publish the intake bot from a repository-root action.yml ([8eb23ac](https://github.com/Ikalus1988/MisakaNet/commit/8eb23ac4f4cf9ca418068926dc567ce7d16c1cf8))
+* **action:** 把 intake bot 迁到仓库根以便上架 Marketplace（并修掉 v1 tag 的两处碰撞） ([4f7b99b](https://github.com/Ikalus1988/MisakaNet/commit/4f7b99b32e035142f3463992293fc4d5effc4712))
+
+
+### Bug Fixes
+
+* **ci:** stop path-only push filters from running branch CI on tag pushes ([fb31b76](https://github.com/Ikalus1988/MisakaNet/commit/fb31b7695d7e59c4e752ddd29163758405400900))
+* **ci:** 路径过滤不排除 tag 推送，三个分支 CI 白跑 ([8c59cf5](https://github.com/Ikalus1988/MisakaNet/commit/8c59cf59893ff76e8472f152ed965315d4125ebc))
+* **docs:** Claude Code reads MCP servers from ~/.claude.json, not settings.json ([fb9a963](https://github.com/Ikalus1988/MisakaNet/commit/fb9a96344db17c5d6450ce73ced85558c3cabd7f))
+* **docs:** Claude Code 的 MCP 配置是 ~/.claude.json 而非 settings.json（外加 agent 清单与坏链接） ([f5626de](https://github.com/Ikalus1988/MisakaNet/commit/f5626de01448d86ce9a2c873cd6c2321dededdbc))
+* **release:** a release PR needs a human, and its changelog is checked before it ships ([4824628](https://github.com/Ikalus1988/MisakaNet/commit/482462869e8d4c3da24ba2db6c53a7b67c85e730))
+
+
+### Documentation
+
+* **action:** README 里补上 action 用法；并修掉所有文档片段缺失的 actions: read ([bae4e2b](https://github.com/Ikalus1988/MisakaNet/commit/bae4e2b069ce6fb59c6e089ed7eaeea82016eb78))
+* **action:** show the action in the README, and grant the scope it needs ([36a9a59](https://github.com/Ikalus1988/MisakaNet/commit/36a9a59c1474c1ddcaef2a1e5bb418a8854945fa))
+* **integrations:** one matrix for "do you support X", with who checked it ([3e1cf5c](https://github.com/Ikalus1988/MisakaNet/commit/3e1cf5c83a220dce386e10d11d392aab4af9961a))
+* **integrations:** 一张带证据等级的兼容矩阵（18 个 agent，含各家配置键陷阱） ([6cdb40c](https://github.com/Ikalus1988/MisakaNet/commit/6cdb40c53a128951863b2200842966e62b874010))
+* **mcp:** say what `misakanet_memory_context`'s parameters *mean*, not what the schema already says ([29a375b](https://github.com/Ikalus1988/MisakaNet/commit/29a375b9e101cb7d376c8e0ee09ab5933a9d8b36))
+* **mcp:** say what `misakanet_memory_context`'s parameters mean, not what the schema already says ([13d2451](https://github.com/Ikalus1988/MisakaNet/commit/13d245180a1612ba7d54046d5779921122aaad2e))
+
 ## [2.32.1](https://github.com/Ikalus1988/MisakaNet/compare/v2.32.0...v2.32.1) (2026-09-20)
 
 
